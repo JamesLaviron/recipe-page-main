@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype-variations");
+  src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype")
+    tech("variations");
+  font-weight: 400 700;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype-variations");
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype")
+    tech("variations");
+  font-weight: 400;
+}
