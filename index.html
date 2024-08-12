@@ -22,10 +22,10 @@
           alt="Omelette"
           width="800"
           height="533"
-          class="preview-image"
+          class="card__image"
         />
         <div class="card__content">
-          <header class="card__title-container">
+          <header class="card__header">
             <h1 class="card__title">Simple Omelette Recipe</h1>
             <p class="card__description">
               An easy and quick dish, perfect for any meal. This classic
@@ -33,79 +33,93 @@
               filled with your choice of cheese, vegetables, or meats.
             </p>
           </header>
-          <section class="preparation-time">
-            <h2 class="title">Preparation time</h2>
-            <ul class="list">
-              <li class="total-time">Total: Approximately 10 minutes</li>
-              <li class="preparation-time">Preparation: 5 minutes</li>
-              <li class="cooking-time">Cooking: 5 minutes</li>
+          <section class="card__section card__section--preparation-time">
+            <h2 class="card__section-title">Preparation time</h2>
+            <ul class="card__list">
+              <li class="card__list-item card__list-item--total-time">
+                Total: Approximately 10 minutes
+              </li>
+              <li class="card__list-item card__list-item--preparation-time">
+                Preparation: 5 minutes
+              </li>
+              <li class="card__list-item card__list-item--cooking-time">
+                Cooking: 5 minutes
+              </li>
             </ul>
           </section>
-          <section class="ingredients">
-            <h2 class="title">Ingredients</h2>
-            <ul class="list">
-              <li class="ingredient">2-3 large eggs</li>
-              <li class="ingredient">Salt, to taste</li>
-              <li class="ingredient">Pepper, to taste</li>
-              <li class="ingredient">1 tablespoon of butter or oil</li>
-              <li class="ingredient">
+          <section class="card__section card__section--ingredients">
+            <h2 class="card__section-title">Ingredients</h2>
+            <ul class="card__list">
+              <li class="card__list-item card__list-item--ingredient">
+                2-3 large eggs
+              </li>
+              <li class="card__list-item card__list-item--ingredient">
+                Salt, to taste
+              </li>
+              <li class="card__list-item card__list-item--ingredient">
+                Pepper, to taste
+              </li>
+              <li class="card__list-item card__list-item--ingredient">
+                1 tablespoon of butter or oil
+              </li>
+              <li class="card__list-item card__list-item--ingredient">
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
               </li>
             </ul>
           </section>
-          <section class="instructions">
-            <h2 class="title">Instructions</h2>
-            <ol class="list">
-              <li class="instruction">
+          <section class="card__section card__section--instructions">
+            <h2 class="card__section-title">Instructions</h2>
+            <ol class="card__list card__list--ordered">
+              <li class="card__list-item card__list-item--instruction">
                 Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
                 pepper until they are well mixed. You can add a tablespoon of
                 water or milk for a fluffier texture.
               </li>
-              <li class="instruction">
+              <li class="card__list-item card__list-item--instruction">
                 Heat the pan: Place a non-stick frying pan over medium heat and
                 add butter or oil.
               </li>
-              <li class="instruction">
+              <li class="card__list-item card__list-item--instruction">
                 Cook the omelette: Once the butter is melted and bubbling, pour
                 in the eggs. Tilt the pan to ensure the eggs evenly coat the
                 surface.
               </li>
-              <li class="instruction">
+              <li class="card__list-item card__list-item--instruction">
                 Add fillings (optional): When the eggs begin to set at the edges
                 but are still slightly runny in the middle, sprinkle your chosen
                 fillings over one half of the omelette.
               </li>
-              <li class="instruction">
+              <li class="card__list-item card__list-item--instruction">
                 Fold and serve: As the omelette continues to cook, carefully
                 lift one edge and fold it over the fillings. Let it cook for
                 another minute, then slide it onto a plate.
               </li>
-              <li class="instruction">
+              <li class="card__list-item card__list-item--instruction">
                 Enjoy: Serve hot, with additional salt and pepper if needed.
               </li>
             </ol>
           </section>
-          <section class="nutrition">
-            <h2 class="title">Nutrition</h2>
-            <p class="description">
+          <section class="card__section card__section--nutrition">
+            <h2 class="card__section-title">Nutrition</h2>
+            <p class="card__description">
               The table below shows nutritional values per serving without the
               additional fillings.
             </p>
-            <table class="table">
-              <thead>
-                <tr class="title">
-                  <th>Calories</th>
-                  <th>Carbs</th>
-                  <th>Protein</th>
-                  <th>Fat</th>
+            <table class="card__table">
+              <thead class="card__table-head">
+                <tr class="card__table-row card__table-row--header">
+                  <th class="card__table-header">Calories</th>
+                  <th class="card__table-header">Carbs</th>
+                  <th class="card__table-header">Protein</th>
+                  <th class="card__table-header">Fat</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="value">
-                  <td>277kcal</td>
-                  <td>0g</td>
-                  <td>20g</td>
-                  <td>22g</td>
+              <tbody class="card__table-body">
+                <tr class="card__table-row card__table-row--value">
+                  <td class="card__table-data">277kcal</td>
+                  <td class="card__table-data">0g</td>
+                  <td class="card__table-data">20g</td>
+                  <td class="card__table-data">22g</td>
                 </tr>
               </tbody>
             </table>
