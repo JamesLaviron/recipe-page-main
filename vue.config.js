@@ -6,19 +6,16 @@ module.exports = defineConfig({
   publicPath: process.env.NODE_ENV === "production" ? "/recipe-page-main/" : "/",
   chainWebpack: config => {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
+    types.forEach(type => addStyleResource(config.module.rule('scss').oneOf(type)))
   },
 })
 
 function addStyleResource (rule) {
-    rule.use('style-resource')
+    rule.use('style-loader', 'css-loader', 'sass-loader')
       .loader('style-resources-loader')
       .options({
         patterns: [
-          path.resolve(__dirname, './src/styles/base.scss'),
-          path.resolve(__dirname, './src/styles/variables.scss'),
-          path.resolve(__dirname, './src/styles/typo.scss'),
-          path.resolve(__dirname, './src/styles/text-presets.scss'),
+          path.resolve(__dirname, './src/assets/styles/variables.scss'),
         ],
       })
   }

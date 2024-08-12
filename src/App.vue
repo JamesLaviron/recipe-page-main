@@ -1,5 +1,4 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
@@ -14,4 +13,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@import "./assets/styles/base.scss";
+@import "./assets/styles/main.scss";
+@import "./assets/styles/text-presets.scss";
+@import "./assets/styles/typo.scss";
+</style>
