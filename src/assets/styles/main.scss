@@ -1,11 +1,16 @@
-@import "./variables.css";
-
-body {
+#app {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
+}
+
+main {
+  padding: 12.8rem 4.8rem;
+  background-color: $color-stone-100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -21,6 +26,8 @@ body {
 .card__image {
   /* Styles for the card image element */
   max-height: 30rem;
+  width: 100%;
+  border-radius: 2.4rem;
 }
 
 .card__content {
@@ -37,12 +44,12 @@ body {
 
 .card__title {
   /* Styles for the card title element */
-  color: var($color-stone-900);
+  color: $color-stone-900;
 }
 
 .card__description {
   /* Styles for the card description element */
-  color: var($color-stone-600);
+  color: $color-stone-600;
 }
 
 .card__section {
@@ -55,22 +62,22 @@ body {
     padding: 2.4rem;
     gap: 1.6rem;
     border-radius: 1.2rem;
-    background-color: var($color-rose-50);
+    background-color: $color-rose-50;
   }
 }
 
 .card__section-title {
   /* Styles for the card section title element */
-  color: var($color-brown-800);
+  color: $color-brown-800;
   &--preparation-time {
     /* Styles for the preparation time section title modifier */
-    color: var($color-rose-800);
+    color: $color-rose-800;
   }
 }
 
 .card__list {
   /* Styles for the card list element */
-  color: var($color-stone-600);
+  color: $color-stone-600;
   gap: 0.8rem;
 }
 
@@ -82,7 +89,7 @@ body {
 
 .card__section-title {
   /* Styles for the card section title element */
-  color: var($color-brown-800);
+  color: $color-brown-800;
 }
 
 .card__table {
@@ -99,10 +106,10 @@ body {
 
 .card__table-header {
   /* Styles for the table header element */
-  color: var($color-brown-800);
+  color: $color-brown-800;
 }
 
 .card__table-data {
   /* Styles for the table data element */
-  color: var($color-stone-600);
+  color: $color-stone-600;
 }
