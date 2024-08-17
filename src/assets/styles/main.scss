@@ -1,7 +1,108 @@
+@import "./variables.css";
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
+}
+
+.card {
+  /* Styles for the card block */
+  display: grid;
+  max-width: 73.6rem;
+  gap: 4rem;
+  padding: 4rem;
+  border-radius: 2.4rem;
+  background-color: white;
+}
+
+.card__image {
+  /* Styles for the card image element */
+  max-height: 30rem;
+}
+
+.card__content {
+  /* Styles for the card content element */
+  display: grid;
+  text-align: left;
+  gap: 3.2rem;
+}
+
+.card__header {
+  /* Styles for the card header element */
+  justify-content: left;
+}
+
+.card__title {
+  /* Styles for the card title element */
+  color: var($color-stone-900);
+}
+
+.card__description {
+  /* Styles for the card description element */
+  color: var($color-stone-600);
+}
+
+.card__section {
+  /* Styles for the card section element */
+  display: grid;
+  gap: 2.4rem;
+
+  &--preparation-time {
+    /* Styles for the preparation time section modifier */
+    padding: 2.4rem;
+    gap: 1.6rem;
+    border-radius: 1.2rem;
+    background-color: var($color-rose-50);
+  }
+}
+
+.card__section-title {
+  /* Styles for the card section title element */
+  color: var($color-brown-800);
+  &--preparation-time {
+    /* Styles for the preparation time section title modifier */
+    color: var($color-rose-800);
+  }
+}
+
+.card__list {
+  /* Styles for the card list element */
+  color: var($color-stone-600);
+  gap: 0.8rem;
+}
+
+.card__list-item {
+  /* Styles for the card list item element */
+  padding-left: 0.8rem;
+  margin-left: 1.6rem;
+}
+
+.card__section-title {
+  /* Styles for the card section title element */
+  color: var($color-brown-800);
+}
+
+.card__table {
+  /* Styles for the card table element */
+  text-align: left;
+  gap: 1.2rem;
+}
+
+.card__table-row {
+  /* Styles for the table row element */
+  gap: 1.6rem;
+  padding: 0 3.2rem;
+}
+
+.card__table-header {
+  /* Styles for the table header element */
+  color: var($color-brown-800);
+}
+
+.card__table-data {
+  /* Styles for the table data element */
+  color: var($color-stone-600);
 }
