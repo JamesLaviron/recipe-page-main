@@ -1,3 +1,5 @@
+@import "text-presets";
+
 #app {
   display: flex;
   justify-content: center;
@@ -39,17 +41,21 @@ main {
 
 .card__header {
   /* Styles for the card header element */
+  display: grid;
   justify-content: left;
+  gap: $spacing-300;
 }
 
 .card__title {
   /* Styles for the card title element */
   color: $color-stone-900;
+  @include text-preset-1;
 }
 
 .card__description {
   /* Styles for the card description element */
   color: $color-stone-600;
+  @include text-preset-4;
 }
 
 .card__section {
@@ -69,9 +75,12 @@ main {
 .card__section-title {
   /* Styles for the card section title element */
   color: $color-brown-800;
+  @include text-preset-2;
+
   &--preparation-time {
     /* Styles for the preparation time section title modifier */
     color: $color-rose-800;
+    @include text-preset-3;
   }
 }
 
@@ -79,37 +88,50 @@ main {
   /* Styles for the card list element */
   color: $color-stone-600;
   gap: $spacing-100;
+  @include text-preset-4;
 }
 
 .card__list-item {
   /* Styles for the card list item element */
-  padding-left: $spacing-100;
-  margin-left: $spacing-200;
+  list-style-position: inside;
+
+  &--instruction::marker {
+    /* Styles for the instruction list item modifier */
+    @include text-preset-4--bold;
+    padding-right: $spacing-100;
+  }
 }
 
-.card__section-title {
-  /* Styles for the card section title element */
-  color: $color-brown-800;
+.card__strong-instruction {
+  margin-left: $spacing-200;
 }
 
 .card__table {
   /* Styles for the card table element */
+  display: grid;
   text-align: left;
   gap: $spacing-150;
+  @include text-preset-4;
 }
 
-.card__table-row {
+.card__table-item {
   /* Styles for the table row element */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: $spacing-200;
   padding: 0 $spacing-400;
 }
 
 .card__table-header {
-  /* Styles for the table header element */
-  color: $color-brown-800;
+  color: $color-stone-600;
+  @include text-preset-4;
 }
 
 .card__table-data {
-  /* Styles for the table data element */
-  color: $color-stone-600;
+  color: $color-brown-800;
+  @include text-preset-4--bold;
+}
+
+.card__divider {
+  border-top: 1px solid $color-stone-150;
 }

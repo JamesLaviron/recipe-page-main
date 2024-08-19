@@ -10,17 +10,15 @@
       />
       <div class="card__content">
         <header class="card__header">
-          <h1 class="card__title text-preset-1">Simple Omelette Recipe</h1>
-          <p class="card__description text-preset-4">
+          <h1 class="card__title">Simple Omelette Recipe</h1>
+          <p class="card__description">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
         </header>
         <section class="card__section card__section--preparation-time">
-          <h2
-            class="card__section-title card__section-title--preparation-time text-preset-3"
-          >
+          <h2 class="card__section-title card__section-title--preparation-time">
             Preparation time
           </h2>
           <ul class="card__list">
@@ -56,6 +54,7 @@
             </li>
           </ul>
         </section>
+        <hr class="card__divider" />
         <section class="card__section card__section--instructions">
           <h2 class="card__section-title">Instructions</h2>
           <ol class="card__list card__list--ordered">
@@ -97,32 +96,34 @@
             </li>
           </ol>
         </section>
+        <hr class="card__divider" />
         <section class="card__section card__section--nutrition">
-          <h2 class="card__section-title text-preset-2">Nutrition</h2>
-          <p class="card__description text-preset-4">
+          <h2 class="card__section-title">Nutrition</h2>
+          <p class="card__description">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table class="card__table">
-            <tbody class="card__table-body">
-              <tr class="card__table-row card__table-row--value">
-                <th class="card__table-header text-preset-4">Calories</th>
-                <td class="card__table-data text-preset-4">277kcal</td>
-              </tr>
-              <tr class="card__table-row card__table-row--value">
-                <th class="card__table-header text-preset-4">Carbs</th>
-                <td class="card__table-data text-preset-4">0g</td>
-              </tr>
-              <tr class="card__table-row card__table-row--value">
-                <th class="card__table-header text-preset-4">Protein</th>
-                <td class="card__table-data text-preset-4">20g</td>
-              </tr>
-              <tr class="card__table-row card__table-row--value">
-                <th class="card__table-header text-preset-4">Fat</th>
-                <td class="card__table-data text-preset-4">22g</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card__table">
+            <div class="card__table-item">
+              <div class="card__table-header">Calories</div>
+              <div class="card__table-data">277kcal</div>
+            </div>
+            <hr class="card__divider" />
+            <div class="card__table-item">
+              <div class="card__table-header">Carbs</div>
+              <div class="card__table-data">0g</div>
+            </div>
+            <hr class="card__divider" />
+            <div class="card__table-item">
+              <div class="card__table-header">Protein</div>
+              <div class="card__table-data">20g</div>
+            </div>
+            <hr class="card__divider" />
+            <div class="card__table-item">
+              <div class="card__table-header">Fat</div>
+              <div class="card__table-data">22g</div>
+            </div>
+          </div>
         </section>
       </div>
     </article>
@@ -137,8 +138,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/styles/typo.scss";
 @import "./assets/styles/base.scss";
 @import "./assets/styles/main.scss";
-@import "./assets/styles/text-presets.scss";
-@import "./assets/styles/typo.scss";
 </style>

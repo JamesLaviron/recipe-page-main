@@ -1,5 +1,5 @@
 /* Text Preset 1 */
-.text-preset-1 {
+@mixin text-preset-1 {
   font-family: "Young Serif", serif;
   font-size: 4rem;
   line-height: 100%;
@@ -8,7 +8,7 @@
 }
 
 /* Text Preset 2 */
-.text-preset-2 {
+@mixin text-preset-2 {
   font-family: "Young Serif", serif;
   font-size: 2.8rem;
   line-height: 100%;
@@ -17,7 +17,7 @@
 }
 
 /* Text Preset 3 */
-.text-preset-3 {
+@mixin text-preset-3 {
   font-family: "Outfit", sans-serif;
   font-size: 2rem;
   line-height: 100%;
@@ -26,14 +26,15 @@
 }
 
 /* Text Preset 4 */
-.text-preset-4 {
+@mixin text-preset-4 {
   font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: 0;
   font-weight: 400;
+}
 
-  &--bold {
-    font-weight: 700;
-  }
+@mixin text-preset-4--bold {
+  @include text-preset-4;
+  font-weight: 700;
 }
