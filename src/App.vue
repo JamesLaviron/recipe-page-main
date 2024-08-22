@@ -16,6 +16,7 @@
         <SectionComponent
           title="Preparation time"
           className="card__section--preparation-time"
+          titleClass="card__section-title--preparation-time"
         >
           <ListComponent :items="preparationTimeItems" />
         </SectionComponent>

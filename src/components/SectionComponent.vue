@@ -1,6 +1,6 @@
 <template>
   <section :class="['card__section', className]">
-    <h2 class="card__section-title">{{ title }}</h2>
+    <h2 :class="['card__section-title', titleClass]">{{ title }}</h2>
     <slot></slot>
   </section>
 </template>
@@ -11,6 +11,7 @@ export default {
   props: {
     title: String,
     className: String,
+    titleClass: String,
   },
 };
 </script>
