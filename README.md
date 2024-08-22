@@ -19,18 +19,18 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-#### Desktop result
+#### Desktop screenshot
 
-![desktop result](./public/images/desktop-result.png)
+![desktop screenshot](./public/images/recipe-desktop-screenshot.png)
 
-#### Mobile result
+#### Mobile screenshot
 
-![mobile result](./public/images/mobile-result.png)
+![mobile screenshot](./public/images/recipe-mobile-screenshot.png)
 
 ### Links
 
 - Solution URL: [FrontEndMentor](https://jameslaviron.github.io/qr-code-component-main/)
-- Live Site URL: [Github pages](https://jameslaviron.github.io/JamesLaviron/recipe-page-main)
+- Live Site URL: [Github pages](https://jameslaviron.github.io/recipe-page-main)
 
 ## My process
 
