@@ -51,6 +51,7 @@
 
 <script>
 import "./assets/styles/base.scss";
+import "./assets/styles/typo.scss";
 import ImageComponent from "@/components/ImageComponent.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import ListComponent from "@/components/ListComponent.vue";
