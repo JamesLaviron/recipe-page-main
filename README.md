@@ -29,7 +29,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [FrontEndMentor](https://jameslaviron.github.io/qr-code-component-main/)
+- Solution URL: [FrontEndMentor](https://www.frontendmentor.io/solutions/recipe-card-CUO-z-X1at)
 - Live Site URL: [Github pages](https://jameslaviron.github.io/recipe-page-main)
 
 ## My process
