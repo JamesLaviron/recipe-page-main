@@ -1,14 +1,18 @@
 <template>
-  <img
-    :src="src"
-    :alt="alt"
-    :width="width"
-    :height="height"
-    :class="className"
-  />
+  <div class="card__image-container">
+    <img
+      :src="src"
+      :alt="alt"
+      :width="width"
+      :height="height"
+      :class="className"
+    />
+  </div>
 </template>
 
 <script>
+// import "../assets/styles/_variables.scss";
+
 export default {
   name: "ImageComponent",
   props: {
@@ -21,10 +25,19 @@ export default {
 };
 </script>
 
-<style scoped>
-.card__image {
+<style scoped lang="scss">
+.card__image-container {
   max-height: 30rem;
+}
+.card__image {
+  height: 100%;
   width: 100%;
   border-radius: 2.4rem;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .card__image {
+    border-radius: unset;
+  }
 }
 </style>

@@ -144,10 +144,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// @import "./assets/styles/_variables.scss";
-// @import "./assets/styles/typo.scss";
-// @import "./assets/styles/text-presets.scss";
-
 #app {
   display: flex;
   justify-content: center;
@@ -185,5 +181,19 @@ main {
 .card__description {
   color: $color-stone-600;
   @include text-preset-4;
+}
+
+// Handle mobile
+@media (max-width: $breakpoint-mobile) {
+  main {
+    padding: 0;
+  }
+  .card {
+    padding: 0;
+    gap: 0;
+  }
+  .card__content {
+    padding: $spacing-500 $spacing-400;
+  }
 }
 </style>
